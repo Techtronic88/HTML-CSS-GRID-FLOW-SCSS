@@ -96,7 +96,7 @@ img {
   font-weight: 700;
   font-size: 5.2rem;
   line-height: 1.1;
-  margin: 0 0 2reml;
+  margin: 0 0 2rem;
 }
 
 .showcase-content p {
@@ -290,6 +290,17 @@ TABS SECTION:
     grid-template-columns: 1fr;
   }
 }
+
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+  display: none;
+}
+
+.show {
+  display: block !important;
+}
+
 /* 
 BUTTONS SECTION:
 These buttons can be boiler plates for other buttons should 
