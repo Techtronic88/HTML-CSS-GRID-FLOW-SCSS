@@ -193,6 +193,32 @@ TABS SECTION:
 .table tbody tr:nth-child(odd) {
   background: #222;
 }
+
+.footer {
+  max-width: 75%;
+  margin: 1rem auto;
+  overflow: auto;
+}
+
+.footer,
+.footer a {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.footer p {
+  margin-bottom: 1.5rem;
+}
+
+.footer .footer-cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+
+.footer li {
+  line-height: 1.9;
+}
 /* CONTAINER SECTION */
 .container {
   max-width: 70%;
@@ -232,6 +258,30 @@ TABS SECTION:
   text-align: center;
 }
 
+@media (max-width: 960px) {
+  .hide-sm {
+    display: none;
+  }
+
+  .showcase-top img {
+    top: 30%;
+    left: 5%;
+    transform: translate(0);
+  }
+
+  .showcase-content h1 {
+    font-size: 3.7rem;
+    line-height: 1;
+  }
+
+  .showcase-content p {
+    font-size: 1.5rem;
+  }
+
+  .btn-xl {
+  }
+}
+
 @media (max-width: 700px) {
   .showcase {
     height: 70vh;
@@ -261,6 +311,10 @@ TABS SECTION:
     font-size: 1.5rem;
   }
 
+  .btn-xl {
+    font-size: 1.5rem;
+    padding: 1.4rem 2rem;
+  }
   .btn-xl {
     font-size: 1rem;
     padding: 1.4rem 2rem;
